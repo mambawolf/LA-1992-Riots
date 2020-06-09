@@ -229,3 +229,7 @@ deathMeans.plot(kind='barh',color='r')
 new_df=data_df[['status','lon','lat']]
 new_df
 
+
+# In[32]
+import seaborn as sns
+ax=sns.scatterplot(x="lon",y="lat",hue="status",data=new_df)
